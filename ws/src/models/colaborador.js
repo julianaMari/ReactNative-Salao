@@ -31,25 +31,41 @@ const colaborador = new Schema({
         enum: ['M', 'F'],
         required: true,
     },
-    
-    capa: String,
-    
-    
-    endereco: {
-        cidade: String,
-        uf: String,
-        cep: String,
-        cep: String,
-        numero: String,
-        pais: String,
+    status: {
+        type: String,
+        required: true,
+        enum: ['A', 'I'],
+        default: 'A'
     },
-    geo: {
-        tipo: String,
-        coordinates: Array,
-    },
-    dataCadastro: {
-        type: Date,
-        default: Date.now,
+    contaBancaria: {
+        titular: {
+            type: String,
+            required: true,
+        },
+        cpfCnpj: {
+            type: String,
+            required: true,
+        },
+        banco: {
+            type: String,
+            required: true,
+        },
+        tipo: {
+            type: String,
+            required: true,
+        },
+        agencia: {
+            type: String,
+            required: true,
+        },
+        numero: {
+            type: String,
+            required: true,
+        },
+        dv: {
+            type: String,
+            required: true,
+        },
     }
 });
 
