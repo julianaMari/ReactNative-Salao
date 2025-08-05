@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.DATABASE_URL;
 const URI = API_KEY;
 
 // mongoose.set('useNewUrlParser', true);
