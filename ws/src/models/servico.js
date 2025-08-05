@@ -15,15 +15,15 @@ const servico = new Schema({
         required: true
     },
     comissao: {
-        type: Number,
+        type: Number, // % de comissão sobre preço
         required: true
     },
     duracao: {
-        type: Number,
+        type: Number, // duração do serviço em minutos
         required: true
     },
     recorrencia: {
-        type: Number,
+        type: Number, // período para refazer o serviço em dias
         required: true
     },
     descricao: {
